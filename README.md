@@ -3,8 +3,19 @@
 Cart Flutter project
 
 1. Jelaskan perbedaan antara Cubit dan Bloc dalam arsitekstur
+    Cubit: Mengubah state secara langsung dengan memanggil method dan melakukan emit(stateBaru).
+    Bloc: Mengubah state lewat event, yang kemudian diproses di fungsi mapEventToState.
 
-2. Mengapa penting untuk memisahkan antara model data, logika bisnis, dan UI dalam pengembangan aplikasi Flutter?
+    Cubit: navigasi hanya 1 halaman
+    Bloc: multi halaman
+
+    Cubit: Widget ListView
+    Bloc: ListView, GridView, Stack
+
+    Cubit: UI flat
+    Bloc: UI memakai material design, animation, dan responsive
+
+3. Mengapa penting untuk memisahkan antara model data, logika bisnis, dan UI dalam pengembangan aplikasi Flutter?
 
 Dengan memisahkan UI, model, dan logika bisnis, aplikasi lebih mudah dikembangkan seiring bertambahnya fitur. Setiap bagian tidak saling mengganggu.
 
@@ -28,7 +39,7 @@ Tanpa memuat widget.
 3. Sebutkan dan jelaskan minimal tiga state yang mungkin digunakan dalam CartCubit beserta fungsinya!
 class CartInitial extends CartState {}. State awal ketika Cubit baru diinisialisasi. Biasanya berisi list produk kosong.
 
-class CartUpdated extends CartState. Menandakan bahwa isi keranjang telah berubah (produk ditambah, dihapus, atau jumlah diubah).
+class CartUpdated extends CartState. Menandakan bahwa igit push -u origin mainsi keranjang telah berubah (produk ditambah, dihapus, atau jumlah diubah).
 
 class CartError extends CartState. Menandakan ada error dalam meng-update keranjang.
 
