@@ -39,7 +39,7 @@ Tanpa memuat widget.
 3. Sebutkan dan jelaskan minimal tiga state yang mungkin digunakan dalam CartCubit beserta fungsinya!
 class State awal ketika Cubit baru diinisialisasi. Biasanya berisi list produk kosong.
 
-class CartUpdated extends CartState. Menandakan bahwa igit push -u origin mainsi keranjang telah berubah (produk ditambah, dihapus, atau jumlah diubah).
+class CartUpdated extends CartState. Menandakan bahwa keranjang telah berubah (produk ditambah, dihapus, atau jumlah diubah).
 
 class CartError extends CartState. Menandakan ada error dalam meng-update keranjang.
 
